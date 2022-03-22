@@ -1,11 +1,18 @@
 import { useState } from 'react'
 import Helmet from './components/Header'
 import Header from "./components/Header";
+import IconoNuevoGasto from './img/nuevo-gasto.svg'
 
 function App() {
-    const [count, setCount] = useState(0);
     const [presupuesto, setPresupuesto] = useState(0);
     const [isValidPresupuesto, setIsValidPresupuesto] = useState(false);
+
+    const [modal, setModal] = useState(false);
+
+    const handleNuevoGasto = () => {
+        setModal(true);
+    }
+
     return (
         <div>
             <Header
@@ -14,6 +21,13 @@ function App() {
                 isValidPresupuesto = {isValidPresupuesto}
                 setIsValidPresupuesto = {setIsValidPresupuesto}
             />
+
+            {isValidPresupuesto && (
+                <div className="nuevo-gasto">
+                    <img src={IconoNuevoGasto} alt="Icono Nuevo Gasto" onClick={handleNuevoGasto}/>
+                </div>
+            )}
+            {modal && <p>Desde modal</p>}
         </div>
     )
 }
