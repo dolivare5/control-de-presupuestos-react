@@ -20,7 +20,7 @@ const Header = ({ presupuesto, setPresupuesto, isValidPresupuesto, setIsValidPre
 
 
         </header>
-    );
+    )
 };
 
 export default Header;

@@ -10,7 +10,7 @@ const ControlPresupuesto = ({presupuesto}) => {
     }
 
     return (
-        <div className="contenedor-presupuesto contenedor sobra dos-columnas">
+        <div className="contenedor-presupuesto contenedor sombra dos-columnas">
             <div>
                 <p>Grafica aquí</p>
             </div>
