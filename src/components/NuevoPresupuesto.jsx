@@ -1,5 +1,5 @@
 
-const NuevoPresupuesto = () => {
+const NuevoPresupuesto = ({ presupuesto, setPresupuesto }) => {
     return (
         <div>
             <div className="contenedor-presupuesto contenedor sombra">
@@ -9,7 +9,9 @@ const NuevoPresupuesto = () => {
                         <input
                             className="nuevo-presupuesto"
                             type="text"
-                            placeholder="Agreue aquí su Presupuesto"
+                            placeholder="Agregue aquí su Presupuesto"
+                            value={presupuesto}
+                            onChange={ e => setPresupuesto(e.target.value) }
                         />
                     </div>
 
