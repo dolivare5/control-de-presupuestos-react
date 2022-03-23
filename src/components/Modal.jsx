@@ -3,7 +3,7 @@ import Mensaje from "./Mensaje";
 import CerrarBtn from '../img/cerrar.svg'
 
 const Modal = ({setModal, animarModal, setAnimarModal, guardarGasto}) => {
-    
+
     const [mensaje, setMensaje] = useState('');
 
     const [nombre, setNombre] = useState('');
@@ -27,7 +27,7 @@ const Modal = ({setModal, animarModal, setAnimarModal, guardarGasto}) => {
             }, 3000)
             return;
         }
-            guardarGasto({nombre, cantidad, categoria});
+        guardarGasto({nombre, cantidad, categoria});
 
 
     }

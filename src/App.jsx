@@ -13,7 +13,8 @@ function App() {
     const [modal, setModal] = useState(false);
     const [animarModal, setAnimarModal] = useState(false);
 
-    const [ gastos, setGastos ] = useState([])
+    const [ gastos, setGastos ] = useState([]);
+
 
     const handleNuevoGasto = () => {
         setModal(true);
@@ -36,6 +37,7 @@ function App() {
     return (
         <div>
             <Header
+                gastos = {gastos}
                 presupuesto = {presupuesto}
                 setPresupuesto = {setPresupuesto}
                 isValidPresupuesto = {isValidPresupuesto}

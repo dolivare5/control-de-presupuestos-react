@@ -9,7 +9,7 @@ const NuevoPresupuesto = ({ presupuesto, setPresupuesto, setIsValidPresupuesto }
         }else{
             setMensaje('')
             setIsValidPresupuesto(true)
-;        }
+            ;        }
     }
 
     return (
