@@ -48,13 +48,6 @@ const Modal = ({setModal, animarModal, setAnimarModal, guardarGasto, gastoEditar
 
     return (
         <div className="modal">
-            <div className="cerrar-modal">
-                <img
-                    src={CerrarBtn}
-                    alt="Cerrar Modal"
-                    onClick={ocultarModal}
-                />
-            </div>
 
             <form
                 className={`formulario ${animarModal ? "animar" : 'cerrar'}`}
@@ -112,8 +105,15 @@ const Modal = ({setModal, animarModal, setAnimarModal, guardarGasto, gastoEditar
                     type="submit"
                     value={gastoEditar.nombre ? "Guardar Cambios" : "Agregar Gasto"}
                 />
-
+                <div className="cerrar-modal">
+                    <img
+                        src={CerrarBtn}
+                        onClick={ocultarModal}
+                    />
+                </div>
             </form>
+
+
 
         </div>
     );

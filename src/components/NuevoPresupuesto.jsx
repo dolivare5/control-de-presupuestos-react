@@ -29,7 +29,7 @@ const NuevoPresupuesto = ({ presupuesto, setPresupuesto, setIsValidPresupuesto }
 
                     <input
                         type="submit"
-                        value="Registrar-Presupuesto"
+                        value="Registrar Presupuesto"
                     />
 
                     {mensaje && <Mensaje tipo={"error"}>{mensaje}</Mensaje> }
