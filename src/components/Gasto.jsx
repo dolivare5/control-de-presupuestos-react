@@ -19,6 +19,12 @@ import IconoOcio from '../img/icono_ocio.svg';
 import IconoGastosVarios from '../img/icono_gastos.svg';
 import IconoSalud from '../img/icono_salud.svg';
 import IconoSuscripciones from '../img/icono_suscripciones.svg';
+import IconoRecargas from '../img/icono_telefono.svg';
+import IconoEducacion from '../img/icono_educacion.svg';
+import IconoSmartPhone from '../img/icono_smartphone.svg';
+import IconoPension from '../img/icono_pension.svg';
+import IconoDeudas from '../img/icono_deudas.svg';
+import IconoAlimentos from '../img/icono_supermercado.svg';
 
 
 const diccionarioIconos =  {
@@ -28,7 +34,13 @@ const diccionarioIconos =  {
     gastos: IconoGastosVarios,
     ocio: IconoOcio,
     salud: IconoSalud,
-    suscripciones: IconoSuscripciones
+    suscripciones: IconoSuscripciones,
+    recargas: IconoRecargas,
+    educacion: IconoEducacion,
+    supermercado: IconoAlimentos,
+    deudas: IconoDeudas,
+    pension: IconoPension,
+    tecnologia: IconoSmartPhone,
 }
 
 const Gasto = ({gasto, setGastoEditar, eliminarGasto}) => {
