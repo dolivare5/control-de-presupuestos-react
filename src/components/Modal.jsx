@@ -10,7 +10,7 @@ const Modal = ({setModal, animarModal, setAnimarModal, guardarGasto, gastoEditar
     const [nombre, setNombre] = useState('');
     const [cantidad, setCantidad] = useState('');
     const [categoria, setCategoria] = useState('');
-    const [fecha, setFecha] = useState;
+    const [fecha, setFecha] = useState('');
     const [id, setId] = useState('');
 
     useEffect(() => {
